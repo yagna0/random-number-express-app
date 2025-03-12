@@ -4,11 +4,13 @@ import cors from 'cors';
 const app = express();
 const port = 3003;
 const N_NUMBERS = 17;
+const yourOrigin = "https://mehrdad7174.github.io"; // Change this to your own domain
 
 const origins = [
     /^https?:\/\/localhost(:\d+)?$/,
     "https://www.google.com",
     /^https:\/\/(.*\.)*vccs\.edu$/,
+    yourOrigin,
 ];
 
 const corsOptions = {
