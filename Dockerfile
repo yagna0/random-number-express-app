@@ -1,8 +1,10 @@
-FROM node:22.14.0-alpine3.21
+FROM node:lts-alpine
+ENV NODE_ENV=production
+WORKDIR /usr/src/app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
+COPY . .
+EXPOSE 3000
+RUN chown -R node /usr/src/app
 USER node
-WORKDIR /home/node
-COPY package.json .
-RUN npm install
-COPY server.js .
-ENTRYPOINT [ "node" ]
-CMD [ "--watch", "server.js" ]
+CMD ["node", "server.js"]
