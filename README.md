@@ -1,6 +1,6 @@
 # Node Express API
 
-This repository contains a Node.js application built with the Express framework. It provides a RESTful API for generating random numbers.
+This repository contains a Node.js application built with the Express framework. It provides a restful API for generating random numbers.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ This repository contains a Node.js application built with the Express framework.
     npm install
     ```
 
-## Usage
+
 
 ### Running with Docker:
 1. Build the container:
