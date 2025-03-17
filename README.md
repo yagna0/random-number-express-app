@@ -6,7 +6,6 @@ This repository contains a Node.js application built with the Express framework.
 
 - **Docker** (version 27.4.0)
 - **Node.js** (v23.6.1)
-- **MacOS** (For Windows, modify commands as needed. Example: use `./scripts/build.sh` instead of `source ./scripts/build.sh`.)
 
 ## Features
 
@@ -20,7 +19,7 @@ This repository contains a Node.js application built with the Express framework.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Mehrdad7174/random-number-express-app
+    git clone https://github.com/yagna0/random-number-express-app
     ```
 2. Navigate into the project directory:
     ```bash
@@ -36,11 +35,11 @@ This repository contains a Node.js application built with the Express framework.
 ### Running with Docker:
 1. Build the container:
     ```bash
-    source ./scripts/build.sh
+    ./scripts/build.sh
     ```
 2. Start the server:
     ```bash
-    source ./scripts/run.sh
+    ./scripts/run.sh
     ```
 3. Access the API at:  
     ```
